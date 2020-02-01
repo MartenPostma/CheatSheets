@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <h2 class="text-center">NaN: represents an error</h2>
+    <div class="panel panel-default">
+        <div class="panel-heading">How to create</div>
+        <div class="panel-body">
+            <p><code>x = Nan;</code></p>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">Useful methods</div>
+        <div class="panel-body">
+            <p><b>isFinite(value)</b> converts to number. true for regular number, false for Nan|Infinity|-Infinity</p>
+            <p><code>isFinite(1); // true</code></p>
+            <p><code>isFinite(NaN); // false</code></p>
+        </div>
+    
+        <div class="panel panel-default">
+            <div class="panel-heading">Pay attention to</div>
+            <div class="panel-body">
+                <p>Always use isNaN to check for NaN</p>
+                <p><code>NaN === NaN; // false</code>></p>
+        
+            </div>
+        </div>
+
+</body>
+
+</html>

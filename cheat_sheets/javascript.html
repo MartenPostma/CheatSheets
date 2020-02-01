@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Javascript cheat sheet</title>
   <meta charset="utf-8">
@@ -8,29 +9,98 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
-<body>
+
+<style>
+  .row {
+    margin-top: 40px;
+    padding: 0 10px;
+  }
+
+  .clickable {
+    cursor: pointer;
+  }
+
+  .panel-heading span {
+    margin-top: -20px;
+    font-size: 15px;
+  }
+</style>
 
 <div class="container">
-  <h2 class="text-center">Javascript cheat sheet</h2>
-  <div class="panel-group">
-    <div class="panel panel-default">
-      <div class="panel-heading">Panel Header</div>
-      <div class="panel-body">HTML <a href="javascript/tags.html">Tags</a></div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title">Data types</h3>
+          <span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span>
+        </div>
+        <div class="panel-body">
+            <p><a href="javascript/string.html" target="_blank">String</a></p>
+            <p><a href="javascript/array.html" target="_blank">Array</a></p>
+            <p><a href="javascript/number.html" target="_blank">Number</a></p>
+            <p><a href="javascript/object.html" target="_blank">Object</a></p>
+            <p><a href="javascript/infinity.html" target="_blank">Infinity</a></p>
+            <p><a href="javascript/NaN.html" target="_blank">NaN</a></p>
+
+        </div>
+      </div>
     </div>
-    <div class="panel panel-default">
-      <div class="panel-heading">Panel Header</div>
-      <div class="panel-body">Panel Content</div>
+    <div class="col-md-6">
+      <div class="panel panel-success">
+        <div class="panel-heading">
+          <h3 class="panel-title">Key concepts 2</h3>
+          <span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span>
+        </div>
+        <div class="panel-body">
+        <p><a href="javascript/iteration.html" target="_blank">Iteration</a></p>
+        <p>= and == and ===</p>
+        <p>Event delegation and bubbling</p>
+        <p>Comparisons</p>
+        </div>
+      </div>
     </div>
-    <div class="panel panel-default">
-      <div class="panel-heading">Panel Header</div>
-      <div class="panel-body">Panel Content</div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <h3 class="panel-title">Panel 3</h3>
+          <span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span>
+        </div>
+        <div class="panel-body">Panel content</div>
+      </div>
     </div>
-    <div class="panel panel-default">
-      <div class="panel-heading">Documentation</div>
-      <div class="panel-body"><a href="https://www.ecma-international.org/publications/standards/Ecma-262.htm" target="_blank">ECMA-262 specification</a></div>
+    <div class="col-md-6">
+      <div class="panel panel-warning">
+        <div class="panel-heading">
+          <h3 class="panel-title">Documentation</h3>
+          <span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span>
+        </div>
+        <div class="panel-body">
+          <p ><a href="https://www.ecma-international.org/publications/standards/Ecma-262.htm"
+              target="_blank">ECMA-262 specification</a></p>
+          <p ><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference"
+              target="_blank">MDN (Mozilla) JavaScript Reference</a></p>
+          <p ><a href="https://caniuse.com/" target="_blank">per-feature tables of support</a></p>
+        </div>
+      </div>
     </div>
   </div>
 </div>
 
-</body>
+<script>
+  $(document).on('click', '.panel-heading span.clickable', function (e) {
+    var $this = $(this);
+    if (!$this.hasClass('panel-collapsed')) {
+      $this.parents('.panel').find('.panel-body').slideUp();
+      $this.addClass('panel-collapsed');
+      $this.find('i').removeClass('glyphicon-chevron-up').addClass('glyphicon-chevron-down');
+    } else {
+      $this.parents('.panel').find('.panel-body').slideDown();
+      $this.removeClass('panel-collapsed');
+      $this.find('i').removeClass('glyphicon-chevron-down').addClass('glyphicon-chevron-up');
+    }
+  })
+</script>
+
 </html>
