@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <h2 class="text-center">Infinity</h2>
+    <div class="panel panel-default">
+        <div class="panel-heading">How to create</div>
+        <div class="panel-body">
+            <p><code>let now = new Date(); // value is now</code></p>
+            <p><code>let date = new Date("2017-01-26");</code></p>
+            <p>The <code>year</code> must have 4 digits: <code>2013</code> is okay, <code>98</code> is not.</p>
+            <p>The <code>month</code> count starts with <code>0</code> (Jan), up to <code>11</code> (Dec).</p>
+            <p>The <code>date</code> parameter is actually the day of month, if absent then <code>1</code> is assumed.</p>
+            <p>If <code>hours/minutes/seconds/ms</code> is absent, they are assumed to be equal <code>0</code>.</p>
+            <p><code>new Date(2011, 0, 1, 0, 0, 0, 0); // 1 Jan 2011, 00:00:00</code></p>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">Useful methods</div>
+        <div class="panel-body">
+            <p><code>getFullYear()</code> get full year</p>
+            <p><code>getMonth()</code> get the integer of the month</p>
+            <p><code>getDate()</code> get the integer of the day</p>
+            <p><code>getDay()</code> get integer of the day of the week</p>
+
+        </div>
+
+</body>
+
+</html>

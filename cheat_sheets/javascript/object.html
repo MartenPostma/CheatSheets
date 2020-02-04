@@ -16,7 +16,20 @@
             <p><code>let user = { // an object <br />
             name: "John", // by key "name" store value "John" <br />
             age: 30 // by key "age" store value 30
-            }</code></p>
+            }</code>
+            <p><code> Mulit-word attribute names must be quoted <br />
+                let user = {<br />
+                name: "John",<br />
+                age: 30,<br />
+                "likes birds": true // multiword property name must be quoted<br />
+                };
+            </code></p>
+            <p><code> If the name of the attribute and the value match, you can do this:
+                let user = { <br />
+                name, // same as name:name <br />
+                age: 30 <br />
+                };
+            </code></p>
 
         </div>
     </div>
@@ -24,7 +37,11 @@
         <div class="panel-heading">Useful methods</div>
         <div class="panel-body">
             <p><code>Object.attribute_name ; access attribute</code></p>
+            <p><code>Object["attribute name"] ; access attribute (useful for multiwords</code></p>
             <p><code>delete Object.attribute_name ; delete attribute</code></p>
+            <p>Property existence: <br />
+            undefined: Object.attribute_name_not_exists <br />
+            boolean expression: attribute_name in Object</p>
 
         </div>
         <div class="panel panel-default">
