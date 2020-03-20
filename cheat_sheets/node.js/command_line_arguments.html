@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </link>
+</head>
+
+<body>
+    <h2 class="text-center">Command line arguments</h2>
+    <div class="panel panel-default">
+        <div class="panel-heading">Information</div>
+        <div class="panel-body">
+            <p>You can pass any number of arguments when invoking a Node.js application:</p>
+            <p><code>node app.js joe peter kobe</code></p>
+            <p>There are two types of arguments:</p>
+            <p>Standalone: <code>node.app.js joe</code></p>
+            <p>Key and value: <code>node.app.js name=joe</code></p>
+            <p>You retrieve these command line arguments using <code>process</code></p>
+            <p><code>process.argv</code> contains</p>
+            <p><ul>
+                <li>It exposes an argv property, which is an array that contains all the command line invocation arguments.</li>
+                <li>the first argument is the full path of the node command</li>
+                <li>the second argument is the path of the node application</li>
+                <li>all others are command line arguments</li>
+            </ul></p>
+
+            <p>Parsing standalone arguments:</p>
+            <p><code>const args = process.argv.slice(2)</code></p>
+            <p>Parsing key=value arguments:</p>
+            <p>Call from the command line: <code>node app.js --key=value --key1=value1</code></p>
+            <p><code>const args = require('minimist')(process.argv.slice(2))</code></p>
+            <p><code>args['name'] //joe</code></p>
+
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </link>
+</head>
+
+<body>
+    <h2 class="text-center">Import</h2>
+    <div class="panel panel-default">
+        <div class="panel-heading">Information</div>
+        <div class="panel-body">
+            <p>You can import functionality from other Node.js files using</p>
+            <p><code>const library = require('./library')</code></p>
+            <p>This exposes the functionality in <code>library.js</code></p>
+            <p>Any other object or variable defined in the file by default is private and not exposed to the outer world.</p>
+            <p>To expose functionality, you use the <code>module.exports</code> API.</p>
+            <p>This can be done in the following way:</p>
+            <p>1. Assign an object to <code>module.exports.ATTRIBUTE_NAME</code></p>
+            <p>In file <b>utils.js</b></p>
+            <p><code>let car = "tesla";</code></p>
+            <p><code>module.exports.car = car;</code></p>
+            <p>You can import this object in another file using:</p>
+            <p><code>let utils = require('./utils');</code></p>
+            <p>console.log(utils.car);</p>
+            <p>The console will show:</p>
+            <p><b>tesla</b></p>    
+        </div>
+
+    </div>
+
+</body>
+
+</html>

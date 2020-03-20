@@ -1,0 +1,63 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </link>
+</head>
+
+<body>
+    <h2 class="text-center">npm</h2>
+    <div class="panel panel-default">
+        <div class="panel-heading">Information</div>
+        <div class="panel-body">
+            <p><b>npm</b> is the standard package manager for Node.js.</p>
+            <p>You can install a package from the command line using</p>
+            <p><code>npm install PACKAGE_NAME</code></p>
+            <p>You can update using</p>
+            <p><code>npm update</code></p>
+            <p>will check all packages for a newer version that satisfies your versioning constraints.</p>
+
+        </div>
+    
+    <div class="panel panel-default">
+        <div class="panel-heading">Package.json</div>
+        <div class="panel-body">
+            <p>If a project has a <b>package.json</b>, you can install all dependencies using</p>
+            <p><code>npm install</code></p>
+            <p>The packages will be stored in the <b>node_modules</b> folder.</p>
+            <p>Important flags</p>
+            <p><b>--save</b> adds the package to the key <b>dependencies (production)</b> of <b>package.json</b></p>
+            <p><b>--save-dev</b> adds the package to the key <b>devDependencies (development)</b> of <b>package.json</b></p>
+            <p>There are at least three ways to add a package to <b>package.json</b></p>
+            <p>{</p>
+            <p>"dependencies": {</p>
+            <p>"express" : "4.17.1"</p>
+            <p>"express" : "~4.17.1"</p>
+            <p>"express" : "^4.17.1"</p>
+            <p>}</p>
+            <p>This is what it means:</p>
+            <ul>
+                <li>"4.17.1": install exact version</li>
+                <li>"~4.17.1": will update you to all future patch versions, without incrementing the minor version</li>
+                <li>"^4.1.7.1": will update you to all future minor/patch versions, without incrementing the major version</li>
+            </ul>
+            <p>You can also use <b>package.json</b> to run tasks</p>
+            <p><code>npm run task_name</code></p>
+            <p>example:</p>
+            <p>{</p>
+            <p>"scripts": {</p>
+            <p>"start": "node app.js"</p>
+            <p>}</p>
+            <p>You can run this task using <code>npm run start</code></p>
+
+
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
