@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </link>
+</head>
+
+<body>
+    <h2 class="text-center">The Queue</h2>
+    <div class="panel panel-default">
+        <div class="panel-heading">Information</div>
+        <div class="panel-body">
+           <p><b>setTimeout</b> takes two arguments</p>
+           <p>1. a callback function</p>
+           <p>2. the minimum number of ms before executing the callback function.</p>
+           <p>Timers are part of the <b>global object</b>, which behaves similarly to the browser’s Window interface.</p>
+           <p>The timers is handled by the global object. After completing, it is passed to the Queue.</p>
+           <p>If the Call Stack is empty, it takes the first callback from the Queue.</p>
+           <p>What is the purpose of calling <b>setTimeout(cb 0)</b>?</p>
+           <p>The answer is that you put it in the Queue and it will only execute when the call stack is empty.</p>
+           <p><a href="http://latentflip.com/loupe" target="_blank">visualisation to help you understand how JavaScript's call stack/event loop/callback queue interact with each other</a></p>
+           <p><code>setTimeout</code> is not render blocking. </p>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

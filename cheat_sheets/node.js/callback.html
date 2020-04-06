@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </link>
+</head>
+
+<body>
+    <h2 class="text-center">callback</h2>
+    <div class="panel panel-default">
+        <div class="panel-heading">Information</div>
+        <div class="panel-body">
+            <p>A function that is to be executed after another function has finished executing.</p>
+            <p>Higher-order function: functions that take as argument or return another function.</p>
+            <p>Any function that is passed as an argument: callback function.</p>
+            <p>Callbacks are a way to make sure certain code doesn’t execute until other code has already finished execution.</p>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">Usage</div>
+        <div class="panel-body">
+            <p>The first argument to a callback is reserverd for an <b>error</b> object.</p>
+            <p>The second argument to a callback is reserverd for  <b>any succesful response data</b>.</p>
+            <p>The higher-order function is called first, e.g., <b>fs.readFile('/foo.txt'</b>  </p>
+            <p>This function attempts to read the contents of the file.</p>
+            <p>The callback handles the output of this function call and has two arguments:</p>
+            <ul>
+                <li><b>err</b> contains error object in the case of an error.</li>
+                <li><b>data</b> the succesful data response from the higher-order function.</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -18,7 +18,11 @@
             <p>You can update using</p>
             <p><code>npm update</code></p>
             <p>will check all packages for a newer version that satisfies your versioning constraints.</p>
-
+            <p><code>npm list</code> will show all locally installed packages.</p>
+            <p><code>npm view PACKAGE_NAME versions</code> will show all available versions.</p>
+            <p><code>npm install PACKAGE_NAME@VERSION</code> will install specific version of a package.</p>
+            <p><code>npm uninstall PACKAGE_NAME</code> is used to uninstall a package.</p>
+            <p>the <b>--save</b> is used to also remove the dependency from <b>package.json</b>.</p>
         </div>
     
     <div class="panel panel-default">
@@ -26,9 +30,10 @@
         <div class="panel-body">
             <p>If a project has a <b>package.json</b>, you can install all dependencies using</p>
             <p><code>npm install</code></p>
-            <p>The packages will be stored in the <b>node_modules</b> folder.</p>
+            <p>The packages will be stored in the <b>node_modules</b> folder in the current file tree.</p>
+            <p>the <code>-g</code> flag can be used for a global installation. Please note that this might involve additional permissions.</p>
             <p>Important flags</p>
-            <p><b>--save</b> adds the package to the key <b>dependencies (production)</b> of <b>package.json</b></p>
+            <p><b>--save (default using local installation)</b> adds the package to the key <b>dependencies (production)</b> of <b>package.json</b></p>
             <p><b>--save-dev</b> adds the package to the key <b>devDependencies (development)</b> of <b>package.json</b></p>
             <p>There are at least three ways to add a package to <b>package.json</b></p>
             <p>{</p>
@@ -51,9 +56,13 @@
             <p>"start": "node app.js"</p>
             <p>}</p>
             <p>You can run this task using <code>npm run start</code></p>
-
-
         </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">package-lock.json</div>
+            <div class="panel-body">
+              <p>The package-lock.json sets your currently installed version of each package in stone</p>
+            </div>
 
 
     </div>

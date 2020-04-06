@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </link>
+</head>
+
+<body>
+    <h2 class="text-center">The Event Loop</h2>
+    <div class="panel panel-default">
+        <div class="panel-heading">Information</div>
+        <div class="panel-body">
+            <p>Node.js runs on a single thread.</p>
+            <p>Typically, there is one event loop per browser tab.</p>
+            <p>The goal is to write code that does not block one event loop.</p>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">Blocking the event loop</div>
+        <div class="panel-body">
+            <p>Any JavaScript code that takes too long to return back control to the event loop will block the execution of any
+            JavaScript code in the page.</p>
+            <p>Being blocked is the exception, which is why Javascript is based on callbacks, promises, and async/await.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
