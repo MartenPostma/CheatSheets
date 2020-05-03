@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </link>
+</head>
+
+<body>
+    <h2 class="text-center">Model Validation</h2>
+    <div class="panel panel-default">
+        <div class="panel-heading">Information</div>
+        <div class="panel-body">
+            <p>After a model fit, it is important to validate your model.</p>
+            <p>First, you have to determine a metric to represent predictive accuracy.</p>
+            <p>It's problematic to validate your model on the data you trained it with, called <b>in-sample scores</b>.</p>
+            <p>The most common way is to split your data into two parts</p>
+            <ul>
+                <li><b>training data:</b> the data used to train the model</li>
+                <li><b>validation data:</b> the data used to validate the model</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">Usage</div>
+        <div class="panel-body">
+           <p>sklearn can perform the train and validate split using</p>
+           <p><code>from sklearn.model_selection import train_test_split</code></p>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </link>
+</head>
+
+<body>
+    <h2 class="text-center">Cross validation</h2>
+    <div class="panel panel-default">
+        <div class="panel-heading">Information</div>
+        <div class="panel-body">
+            <p>In cross-validation, a dataset is first split into <b>folds</b>.</p>
+            <p>In each experiment run, all folds except one are used for train and the remaining fold is used for validation.</p>
+            <p>The number of folds is equivalent to the numbero of folds, i.e., each fold is used once for testing.</p>
+            <p>This means that the result of cross-validation is a score for each fold.</p>
+            <p>Typically the mean of the score is reported along with the standard descriptive statistics about the distribution of the scores.</p>
+            <p>Cross-validation generally prevents overfitting better than a single split into training and validation.</p>
+            <p>However, cross-validation is computationally more expensive.</p>
+            <p>There are different types of cross-validation. The main types are:</p>
+            <ul>
+                <li><b>K-fold cross-validation</b> split into n folds</li>
+                <li><b>Stratified K-fold Cross Validation</b> The splitting of data into folds may be governed by criteria such as ensuring that each fold has the same proportion of observations</li>
+                <li><b>Leave One Out Cross Validation (LOOCV)</b> each data instance is a fold. The number of runs corresponds to the number of folds.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">Usage</div>
+        <div class="panel-body">
+            <p><code>from sklearn.model_selection import cross_val_score</code> can be used for cross-validation.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

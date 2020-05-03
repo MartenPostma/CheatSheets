@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </link>
+</head>
+
+<body>
+    <h2 class="text-center">Categorical variables</h2>
+    <div class="panel panel-default">
+        <div class="panel-heading">Information</div>
+        <div class="panel-body">
+            <p>Categorical variables are variables that take a limited number of values.</p>
+            <p><b>Cardinality</b> is used to indicate the number of unique values for a categorical variable.</p>
+            <p>Three approaches to treat them are:</p>
+            <ul>
+                <li><b>Drop categorical variables</b></li>
+                <li><b>Label encoding</b> assign each unique value to a different integer. 
+                    Please note that this creates artificial distance between the categories since the values are converted to integers.</li>
+                <li><b>One-hot encoding</b> new columns are created for each unique value. 
+                    The column indicates whether the value of variables applies to the data instance.
+                    Please note that One-hot encoding adds a large number of columns.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">Usage</div>
+        <div class="panel-body">
+            <p><code>from sklearn.preprocessing import LabelEncoder</code> can be used for Label Encoding.</p>
+            <p><code>from sklearn.preprocessing import OneHotEncoder</code> can be used for One hot encoding.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

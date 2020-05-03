@@ -1,0 +1,46 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </link>
+</head>
+
+<body>
+    <h2 class="text-center">Missing Values</h2>
+    <div class="panel panel-default">
+        <div class="panel-heading">Information</div>
+        <div class="panel-body">
+            <p>It occurs that not all data instances have values for all features:</p>
+            <ul>
+                <li>a feature can only be applied to a subset of all data instances.</li>
+                <li>only a subset of all data instances have been annotated for that feature.</li>
+            </ul>
+            <p>Three typical ways to treat missing values are:</p>
+            <ul>
+                <li><b>drop columns</b> with missing values</li>
+                <li><b>Imputation</b> fill in one value, e.g., the mean of the column</li>
+                <li><b>Imputation extension</b> Imputation, but with another column (boolean) to indicate whether there was a missing value.</li>
+            </ul>
+            <p>What to use when?</p>
+            <ul>
+                <li><b>drop columns</b> can lead to removing valuable information.</li>
+                <li><b>Imputation</b> can lead to </li>
+
+            </ul>
+            
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">Usage</div>
+        <div class="panel-body">
+            <p>For <b>drop columns</b> one can use <code>df.drop(cols_with_missing, axis=1)</code></p>
+            <p>For <b>Imputation</b> one can use <code>from sklearn.impute import SimpleImputer</code></p>
+        </div>
+    </div>
+
+</body>
+
+</html>
