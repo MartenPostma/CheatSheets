@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </link>
+</head>
+
+<body>
+    <h2 class="text-center">search</h2>
+    <div class="panel panel-default">
+        <div class="panel-heading">search</div>
+        <div class="panel-body">
+            <p>the syntax to search is db.COLLECTION.find({})</p>
+            <p>Any key:value pairs you specify in {} limits the number of results</p>
+            <p>to match on <b>id_</b>, you have to provide it as ObjectId("KEY")</p>
+            <p>You can project which fiels will be shown in the output usng a second dictionary: db.COLLECTION.find({}, {}) </p>
+            <p>For the projection dictionary, you indicate per key which one you want to see, e.g., {"name":1, "email":1}</p>
+            <p>You can a nested search using KEY_LEVEL1.KEY_LEVEL2.</p>
+            <p>If the value of key is a list of values, e.g, "email" : [ "lhmdebruin@hotmail.com", "leontien134@tiscalimail.nl" ]</p>
+            <p>you can still retrieve them using {"email" : "lhmdebruin@hotmail.com"}.</p>
+            <p><b>and & or</b>: you can use <b>$or, $and</b> to provide a list of queries</p>
+            <p>pymongo can be used to interact with a database using Python.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
