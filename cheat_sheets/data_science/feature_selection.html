@@ -1,0 +1,34 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </link>
+</head>
+
+<body>
+    <h2 class="text-center">Feature Selection</h2>
+    <div class="panel panel-default">
+        <div class="panel-heading">Information</div>
+        <div class="panel-body">
+            <p>An important step is to determine which feature will be selected.</p>
+            <p>The most common options are:</p>
+            <ul>
+                <li><b>Univariate feature selection</b>For each feature, measure how strongly the target depends on the feature using a statistical test</li>
+                <p><b>L1 regularization</b> penalizes the absolute magnitude of the coefficients. As the strength of regularization is increased, features which are less important for predicting the target are set to
+                0. </p>
+            </ul>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">Usage</div>
+        <div class="panel-body">
+            <p><code>from sklearn.feature_selection import SelectKBest</code> can be used for Univariate Feature Selection.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

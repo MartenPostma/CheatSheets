@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </link>
+</head>
+
+<body>
+    <h2 class="text-center">SHAP</h2>
+    <div class="panel panel-default">
+        <div class="panel-heading">Information</div>
+        <div class="panel-body">
+           <p>SHapley Additive exPlanations (SHAP) shows insights into a model's single prediction.</p>
+           <p>SHAP compares the prediction made to the prediction when the feature value would be a baseline value.</p>
+        </div>
+
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">Usage</div>
+        <div class="panel-body">
+            <p><code>import shap</code></p>
+            <p><code>explainer = shap.TreeExplainer(my_model)</code></p>
+            <p><code>shap_values = explainer.shap_values(data_for_prediction)</code></p>
+            <p><code>shap.initjs();shap.force_plot(explainer.expected_value[1], shap_values[1], data_for_prediction)</code></p>
+            <p><code>shap.summary_plot</code> can be used for summary plots</p>
+            <p><code>shap.dependence_plot</code> can be used for dependence contribution plots.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

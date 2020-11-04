@@ -22,6 +22,9 @@
                 <li><b>One-hot encoding</b> new columns are created for each unique value. 
                     The column indicates whether the value of variables applies to the data instance.
                     Please note that One-hot encoding adds a large number of columns.</li>
+                <li><b>Count encoding</b> replaces each categorical value with the number of times it appears in the dataset</li>
+                <li><b>Target encoding</b> (TODO: How do you encode test data?) replace feature by probability of the target. In what percentage of the cases it is a positive signal for the predictive feature?</li>
+                <li><b>Singular Value Decomposition</b> apply singular value decomposition on co-occurence matrix of categorical features.</li>
             </ul>
         </div>
     </div>
@@ -31,6 +34,7 @@
         <div class="panel-body">
             <p><code>from sklearn.preprocessing import LabelEncoder</code> can be used for Label Encoding.</p>
             <p><code>from sklearn.preprocessing import OneHotEncoder</code> can be used for One hot encoding.</p>
+            <p><code>category_encoders.TargetEncoder</code> can be used for Target Encoding.</p>
         </div>
     </div>
 

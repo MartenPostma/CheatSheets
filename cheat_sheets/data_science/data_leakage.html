@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </link>
+</head>
+
+<body>
+    <h2 class="text-center">Data leakage</h2>
+    <div class="panel panel-default">
+        <div class="panel-heading">Information</div>
+        <div class="panel-body">
+            <p>Data leakage is when the training data contains information about the target, but similar data is not available.</p>
+            <p>The model will look accurate but the performance will be low on other data, e.g., test data.</p>
+            <p>There are two types of data leakage:</p>
+            <ul>
+                <li>Target-leakage</li>
+                <li>train-test contamination</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">Usage</div>
+        <div class="panel-body">
+            <p><b>Target leakage</b> occurs when your predictors include data that will not be available at the time you make predictions.</p>
+            <p><b>Train-test contamination</b> occurs when there is overlapping data between training, validation, or test.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

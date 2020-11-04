@@ -1,0 +1,34 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </link>
+</head>
+
+<body>
+    <h2 class="text-center">Partial dependence plots</h2>
+    <div class="panel panel-default">
+        <div class="panel-heading">Information</div>
+        <div class="panel-body">
+            <p>Partial dependence plots show how a feature affects predictions.</p>
+            <p>Partial dependence plots are calculated after the model has been fit.</p>
+            <p>One predictive feature is selected</p>
+            <p>The value of the one feature is repeatedly altered and predictions are made using this altered data.</p>
+            <p>The y-axis is the change in prediction compared to the baseline model.</p>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">Usage</div>
+        <div class="panel-body">
+            <p><code>from pdpbox import pdp;pdp.pdp_isolate</code> can be used</p>
+            <p><code>pdp.pdp_interact</code> can be used for 2D plots.</p>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
