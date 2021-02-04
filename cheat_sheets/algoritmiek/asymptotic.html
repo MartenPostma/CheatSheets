@@ -1,0 +1,83 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
+    </link>
+</head>
+
+<body>
+    <h2 class="text-center">Asymptotic</h2>
+    <div class="panel panel-default">
+        <div class="panel-heading">Information</div>
+        <div class="panel-body">
+            <p>asymptotic: approaching but never connecting with a line or a curve.</p>
+            <p>useful because we want to know how algorithms behave when n is very large.</p>
+            <p>the definition for function that does the work: T(n).</p>
+            <p>we have to determine the bounds of the output of T(n) for all possible values of n.</p>
+            <p>complexity order:
+                <ul>
+                    <li>O(1)</li>
+                    <li>O(log(n))</li>
+                    <li>O(n)</li>
+                    <li>O(n*log(n))</li>
+                    <li>O(n^2)</li>
+                    <li>O(n^3)</li>
+                    <li>....</li>
+                    <li><a href="https://www.bigocheatsheet.com/" target="_blank">bigocheatsheet.com</a></li>
+                </ul>
+            </p>
+        </div>
+    </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">Big-O: upper-bound</div>
+            <div class="panel-body">
+                <p>Big-O is used for the upper-bound of T(n).</p>
+                <p>This is for the worst case.</p>
+                <p></p>
+                <p>$$ {T(n) \text{ is } O( f(n))}$$</p>
+                <p>$$ {\text{ iff } T(n) \gt c* f(n)} $$</p>
+                <p>$$ {\text{ for all } n>= n_{0}} $$</p>
+                <p></p>
+                <p>T(n) can be upper-bounded using f(n).</p>
+                <p>T(n) is the function that does the actual work.</p>
+                <p>O means that we upper-bound it.</p>
+                <p>f(n) is the function used for bounding.</p>
+                <p>The iff explains when the function can be used for upper-bounding.</p>
+                <p>$$ {n_{0}} $$ is when n=0.</p>
+            </div>
+        </div>
+
+
+        <div class="panel panel-default">
+            <div class="panel-heading">$$ {\Omega} $$: lower-bound.</div>
+            <div class="panel-body">
+                <p>Lower-bound is for the best case.</p>
+                <p>In this case, all values must be below the value of T(n).</p>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">tight-bound</div>
+            <div class="panel-body">
+                <p>You want to upper-bound a function as tightly as possible.</p>
+                <p>loose upper-bound: an upper-bound that is correct, but far away from the actual upper-bound.</p>
+                <p>tight upper-bound: an upper-bound that is correct and is close to the actual upper-bound.</p>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">$$ {\Theta}: exact bound $$</div>
+            <div class="panel-body">
+                <p>where the upper-bound and the lower-bound come together.</p>
+                <p>there is no little theta since theta is a perfect bound.</p>
+             
+            </div>
+        </div>
+
+</body>
+
+</html>
